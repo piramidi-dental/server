@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "specialisation_lists",
+  "info": {
+    "singularName": "specialisation-list",
+    "pluralName": "specialisation-lists",
+    "displayName": "SpecialisationList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "componentType": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "specialisations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::specialisation.specialisation"
+    }
+  }
+}

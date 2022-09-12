@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinics",
+  "info": {
+    "singularName": "clinic",
+    "pluralName": "clinics",
+    "displayName": "Clinic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "mobile": {
+      "type": "biginteger"
+    },
+    "map": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

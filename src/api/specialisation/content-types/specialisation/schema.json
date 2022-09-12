@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specialisations",
+  "info": {
+    "singularName": "specialisation",
+    "pluralName": "specialisations",
+    "displayName": "Specialisation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "assistant_lists",
+  "info": {
+    "singularName": "assistant-list",
+    "pluralName": "assistant-lists",
+    "displayName": "AssistantList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "assistants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::assistant.assistant"
+    },
+    "componentType": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "patient_benefits",
+  "info": {
+    "singularName": "patient-benefit",
+    "pluralName": "patient-benefits",
+    "displayName": "PatientBenefit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

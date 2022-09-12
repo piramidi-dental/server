@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "roles": {
+      "type": "richtext",
+      "required": true
+    },
+    "experience": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

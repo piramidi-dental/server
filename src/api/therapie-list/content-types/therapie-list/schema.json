@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "therapie_lists",
+  "info": {
+    "singularName": "therapie-list",
+    "pluralName": "therapie-lists",
+    "displayName": "TherapieList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "therapies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::therapie.therapie"
+    },
+    "componentType": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
