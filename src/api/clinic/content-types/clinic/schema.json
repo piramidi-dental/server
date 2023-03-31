@@ -39,6 +39,10 @@
     "address": {
       "type": "richtext",
       "required": true
+    },
+    "uuid": {
+      "type": "uid",
+      "required": true
     }
   }
 }

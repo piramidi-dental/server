@@ -24,6 +24,10 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "uuid": {
+      "type": "uid",
+      "required": true
     }
   }
 }
